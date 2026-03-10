@@ -11,7 +11,7 @@ Our code is organized like this in the `src` folder:
 - **interfaces/** - simple definitions
 - **libraries/** - helper code
 - **modules/** - the main logic parts
-- - **script/** - deployment script
+- **script/** - deployment script
 - **core/** - the heart of the treasury
 
 ## How the System Works
@@ -52,7 +52,7 @@ We use a Merkle Root for rewards. Instead of the contract sending tokens to 1000
 
 Just a small helper to find who signed a message. Kept it seperate to keep things clean.
 
-## Security stuff
+## Security
 
 Each part has its own job. The proposal module checks the "what", the auth module checks the "who", and the timelock checks the "when". The main `AresTreasury` contract is the final boss—it checks everything one last time before it actually sends any crypto out.
 
