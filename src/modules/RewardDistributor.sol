@@ -24,7 +24,7 @@ contract RewardDistributor {
         require(!claimed[msg.sender], "claimed");
 
         bytes32 leaf = keccak256(
-            abi.encode(msg.sender, amount)
+            abi.encodePacked(msg.sender, amount)
         );
 
         require(

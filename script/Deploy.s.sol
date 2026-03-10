@@ -2,7 +2,7 @@
 pragma solidity ^0.8.20;
 
 import "forge-std/Script.sol";
-import "../src/AresTreasury.sol";
+import "../src/core/AresTreasury.sol";
 import "../src/modules/AuthorizationModule.sol";
 import "../src/modules/RewardDistributor.sol";
 
